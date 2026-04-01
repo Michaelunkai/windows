@@ -1,0 +1,76 @@
+
+=== TCP/IP Registry Optimizations [2026-03-31] ===
+Applied via: HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+  DefaultTTL             = 64
+  EnablePMTUDiscovery    = 1
+  GlobalMaxTcpWindowSize = 65535
+  TcpWindowSize          = 65535
+  DisableTaskOffload     = 0
+
+=== Spooler Status [2026-03-31] ===
+No physical printers detected (only virtual: Microsoft Print to PDF, Microsoft XPS Document Writer).
+Action: Spooler service set to Disabled and stopped.
+  Before: Running / Automatic
+  After:  Stopped / Disabled
+
+=== TCP/IP Registry Verification [] ===
+DefaultTTL:             64
+EnablePMTUDiscovery:    1
+GlobalMaxTcpWindowSize: 65535
+TcpWindowSize:          65535
+DisableTaskOffload:     0
+
+--- Todo #14: Token Counts and Compression Recommendations (2026-04-01) ---
+Source: C:\Users\micha\.claude\audit\command-tokens-2026-03-31.txt
+
+TOP 5 HEAVIEST COMMAND FILES:
+  1. rlp.md      ~4,349 tokens  (17KB)
+  2. work.md     ~3,449 tokens  (13.5KB)
+  3. tel.md      ~3,246 tokens  (12.7KB)
+  4. end.md      ~2,562 tokens  (10KB)
+  5. job.md      ~1,648 tokens  (6.4KB)
+  TOTAL top 5:   ~15,254 tokens
+
+30% COMPRESSION ESTIMATE (top 5):
+  rlp.md   : 4349 * 0.30 = 1305 tokens saved
+  work.md  : 3449 * 0.30 = 1035 tokens saved
+  tel.md   : 3246 * 0.30 =  974 tokens saved
+  end.md   : 2562 * 0.30 =  769 tokens saved
+  job.md   : 1648 * 0.30 =  494 tokens saved
+  TOTAL SAVINGS: ~4,577 tokens per session if top 5 trimmed 30%
+
+COMPRESSION RECOMMENDATIONS:
+  HIGH ROI:
+  - rlp.md: Collapse redundant step references, deduplicate mode sections,
+    remove duplicated JSON schema (saves ~1,300 tokens)
+  - work.md: Remove path table (project-specific), consolidate EMERGENCY RULEs
+    to one block (saves ~1,000 tokens)
+  MEDIUM ROI:
+  - tel.md: Extract 33 requirements to tel-requirements.md (on-demand load),
+    collapse ROUTING "do NOT" repetitions (saves ~975 tokens)
+  - end.md: Replace per-step descriptions with one-line + see /cmd reference
+    (saves ~770 tokens)
+  LOW ROI:
+  - job.md: Move fallback/error sections to comments (saves ~495 tokens)
+  MEGA DEDUP OPPORTUNITY:
+  - rlpN variants (rlp10-50): ~90 files at ~680 tokens each = ~61,200 tokens loaded
+    when all rlp commands are discovered. Consolidate numbered variants into parameterized
+    single command (estimated 50,000+ tokens reduction in command discovery phase)
+
+POSTTOOLUSE HOOK OVERHEAD CALCULATION (2026-04-01):
+  PostToolUse hooks:      1 (tg-progress.ps1) - async=true
+  PostToolUseFailure:     1 (tg-fail.ps1) - async=true
+  Hook count (blocking):  0
+  Avg measured duration:  ~910ms (tg-progress.ps1, but async so non-blocking)
+  Tool calls/session:     ~45
+  Blocking overhead:      0 * 910ms * 45 = 0ms (all async)
+  VERDICT: No blocking overhead from PostToolUse hooks.
+           All hooks use async=true - zero latency impact on tool execution.
+  FLAG: Total > 5000ms/session? NO (0ms blocking)
+
+SLOWEST POSTTOOLUSE HOOKS:
+  tg-progress.ps1 - ~910ms measured but async=true (no blocking)
+  tg-fail.ps1     - similar async execution, error notifications only
+  LOW-VALUE HOOKS: None identified - both hooks provide useful Telegram feedback.
+
+## Session Complete 2026-04-01 - All 24 todos done

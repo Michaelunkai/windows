@@ -1,0 +1,74 @@
+﻿# Startup (AtLogon) Task Audit - 2026-04-01 07:32
+# Total AtLogon tasks: 60
+
+## User-Created AtLogon Tasks
+  [Disabled] AIMemoryBoost
+  [Ready] ChromeDualCDPLaunch
+  [Disabled] ChromeProfiles
+  [Disabled] ClaudeChannel
+  [Disabled] ClaudeUsageRefresh
+  [Ready] ClawdBot_AutoStart
+  [Disabled] FastStartup_ClaudeChannel
+  [Disabled] FastStartup_current
+  [Disabled] FastStartup_FullScreenSnip
+  [Disabled] FastStartup_ram_optimizer
+  [Disabled] FastStartup_Speedy
+  [Disabled] FastStartup_TgTray
+  [Ready] GCC
+  [Disabled] MicrosoftEdgeUpdateTaskMachineCore{A5C83DA7-FB44-4A79-A2F4-E6DE0C5921F2}
+  [Ready] NuclearWatch_Logon
+  [Ready] OpenClaw Gateway
+  [Ready] OpenClawGatewayStartup
+  [Ready] RestoreMrigflt
+  [Ready] Startup_AutoHotkey
+  [Ready] Startup_ClawdBot
+  [Ready] Startup_FullScreenSnip
+  [Running] Startup_OpenSpeedy
+  [Ready] Startup_RamOptimizer
+  [Running] Startup_Signal
+  [Disabled] TgChannel
+  [Disabled] TgTray
+  [Running] Tweaking.com - Windows Repair Tray Icon
+  [Disabled] WandGameAutoSync
+
+## System AtLogon Tasks
+  [Disabled] \GoogleSystem\GoogleUpdater\GoogleUpdaterTaskSystem148.0.7730.0{3E341EAD-9871-49C3-B363-01273178C2E6}
+  [Disabled] \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (Automated)
+  [Ready] \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (Manual)
+  [Ready] \Microsoft\Windows\AppxDeploymentClient\Pre-staged app cleanup
+  [Ready] \Microsoft\Windows\AppxDeploymentClient\UCPD velocity
+  [Ready] \Microsoft\Windows\CertificateServicesClient\KeyPreGenTask
+  [Ready] \Microsoft\Windows\CertificateServicesClient\UserTask
+  [Disabled] \Microsoft\Windows\Clip\LicenseImdsIntegration
+  [Ready] \Microsoft\Windows\Device Information\Device User
+  [Ready] \Microsoft\Windows\DeviceDirectoryClient\RegisterUserDevice
+  [Ready] \Microsoft\Windows\DirectX\DirectXDatabaseUpdater
+  [Disabled] \Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticResolver
+  [Ready] \Microsoft\Windows\EnterpriseMgmt\MDMMaintenenceTask
+  [Ready] \Microsoft\Windows\Hotpatch\Monitoring
+  [Ready] \Microsoft\Windows\International\Synchronize Language Settings
+  [Ready] \Microsoft\Windows\LanguageComponentsInstaller\Installation
+  [Ready] \Microsoft\Windows\LanguageComponentsInstaller\ReconcileLanguageResources
+  [Ready] \Microsoft\Windows\Management\Provisioning\Logon
+  [Disabled] \Microsoft\Windows\MemoryDiagnostic\AutomaticOfflineMemoryDiagnostic
+  [Running] \Microsoft\Windows\Multimedia\SystemSoundsService
+  [Ready] \Microsoft\Windows\Network Connectivity Status Indicator\NcsiIdentifyUserProxies
+  [Disabled] \Microsoft\Windows\Offline Files\Logon Synchronization
+  [Ready] \Microsoft\Windows\Plug and Play\Device Install Reboot Required
+  [Ready] \Microsoft\Windows\PushToInstall\LoginCheck
+  [Disabled] \Microsoft\Windows\SoftwareProtectionPlatform\SvcRestartTaskLogon
+  [Ready] \Microsoft\Windows\TextServicesFramework\MsCtfMonitor
+  [Ready] \Microsoft\Windows\WindowsColorSystem\Calibration Loader
+  [Disabled] \Microsoft\Windows\Wininet\CacheTask
+  [Ready] \Microsoft\Windows\Work Folders\Work Folders Logon Synchronization
+  [Ready] \Microsoft\Windows\Work Folders\Work Folders Maintenance Work
+  [Disabled] \Microsoft\Windows\Workplace Join\Automatic-Device-Join
+  [Disabled] \Microsoft\Windows\Workplace Join\Recovery-Check
+
+## 6 Known App Check
+  NOTE: Apps use different task names than simple app names.
+  FastStartup_ram_optimizer: FOUND
+  FastStartup_FullScreenSnip: FOUND
+  FastStartup_Speedy: FOUND
+  Startup_AutoHotkey: FOUND
+  Startup_ClawdBot / ClawdBot_AutoStart: FOUND
